@@ -16,5 +16,10 @@ Array.prototype.findIndex = function(fn) {
 };
 
 Array.prototype.includes = function(search) {
-  return false
-}
+  for (var i = 0; i < this.length; i++) {
+    if(this[i] === search){
+      return true;
+    }
+  }
+  return false;
+};
