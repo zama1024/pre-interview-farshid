@@ -1,7 +1,7 @@
 String.prototype.endsWith = function(search, position) {
   let endPos = position ? position - 1 : this.length - 1;
 
-  //-------------------------One liner Solution----------------------------
+  //-------------------------One-liner Solution----------------------------
   // return this.slice(endPos - search.length + 1,endPos + 1) === search;
 
   //------------------------Alternate Solution-----------------------------
