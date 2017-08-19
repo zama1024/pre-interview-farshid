@@ -1,6 +1,10 @@
 Array.prototype.find = function(fn) {
-  return "failure"
-}
+  for (var i = 0; i < this.length; i++) {
+    if(fn.call(this, this[i])){
+      return this[i];
+    }
+  }
+};
 
 Array.prototype.findIndex = function(fn) {
   return 100
