@@ -7,8 +7,13 @@ Array.prototype.find = function(fn) {
 };
 
 Array.prototype.findIndex = function(fn) {
-  return 100
-}
+  for (var i = 0; i < this.length; i++) {
+    if(fn.call(this, this[i])){
+      return i;
+    }
+  }
+  return -1;
+};
 
 Array.prototype.includes = function(search) {
   return false
